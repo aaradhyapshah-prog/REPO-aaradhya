@@ -68,4 +68,8 @@ function handleNewSurvey() {
     
     // Scroll back to the form
     form.scrollIntoView({ behavior: "smooth" });
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7289b8fc61c114290bbdae37c2261be05f45ab94
