@@ -4,10 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const resultSummary = document.getElementById("result-summary");
 
     form.addEventListener("submit", (event) => {
-        // Stop form from refreshing the page on submit
+       
         event.preventDefault();
 
-        // Safely extract chosen strings or text contents from the fields
         const skillLevel = document.getElementById("skill-level").options[document.getElementById("skill-level").selectedIndex].text;
         const easierTech = document.getElementById("easier-tech").options[document.getElementById("easier-tech").selectedIndex].text;
         const mainGoal   = document.getElementById("main-goal").value.trim();
@@ -19,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const resource   = document.getElementById("resource").value.trim();
         const nextTopic  = document.getElementById("next-topic").options[document.getElementById("next-topic").selectedIndex].text;
 
-        // Build cleanly structured markup inside the empty result block
+        
         resultSummary.innerHTML = `
             <p><strong>1. Skill Level:</strong> ${skillLevel}</p>
             <p><strong>2. Easier Tech:</strong> ${easierTech}</p>
@@ -33,13 +32,13 @@ document.addEventListener("DOMContentLoaded", () => {
             <p><strong>10. Next Milestone:</strong> ${nextTopic}</p>
         `;
 
-        // Display the hidden box container
+        
         resultDiv.style.display = "block";
 
-        // Scroll the viewport down to let the user review their answers
+       
         resultDiv.scrollIntoView({ behavior: "smooth" });
 
-        // Wipe the input values out so the user can take it clean again if desired
+        
         form.reset();
     });
 });
