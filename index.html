@@ -46,16 +46,89 @@
         </section>
 
         <section class="box1" id="form-section">
-            <h2>Sign Up for Updates</h2>
-            <p>Fill out this form to receive simple coding tips in your inbox.</p>
+            <h2>HTML & CSS Survey</h2>
+            <p>Please take a few moments to answer these 10 questions about your web development experience.</p>
             <form>
-                <label>Your Name:</label>
-                <input type="text" placeholder="Enter your name" class="input1">
+                <!-- Question 1 -->
+                <label>1. What is your current skill level in HTML/CSS?</label>
+                <select class="input1">
+                    <option value="" disabled selected>Select your level</option>
+                    <option value="beginner">Beginner (Just starting)</option>
+                    <option value="intermediate">Intermediate (Built a few projects)</option>
+                    <option value="advanced">Advanced (Comfortable building layouts)</option>
+                </select>
+
+                <!-- Question 2 -->
+                <label>2. Which technology do you find easier to learn?</label>
+                <select class="input1">
+                    <option value="" disabled selected>Select an option</option>
+                    <option value="html">HTML (Structure)</option>
+                    <option value="css">CSS (Styling)</option>
+                    <option value="both">Both are equally clear</option>
+                    <option value="neither">Both are challenging</option>
+                </select>
                 
-                <label>Your Email:</label>
-                <input type="email" placeholder="Enter your email" class="input1">
+                <!-- Question 3 -->
+                <label>3. What is your main goal for learning web development?</label>
+                <input type="text" placeholder="e.g., Build a portfolio, career change, hobby" class="input1">
+
+                <!-- Question 4 -->
+                <label>4. Which CSS layout tool do you prefer using?</label>
+                <select class="input1">
+                    <option value="" disabled selected>Select a layout tool</option>
+                    <option value="flexbox">CSS Flexbox</option>
+                    <option value="grid">CSS Grid</option>
+                    <option value="floats">Floats / Positioning</option>
+                    <option value="none">I don't know yet</option>
+                </select>
+
+                <!-- Question 5 -->
+                <label>5. How long have you been practicing web development?</label>
+                <select class="input1">
+                    <option value="" disabled selected>Select a duration</option>
+                    <option value="less-month">Less than 1 month</option>
+                    <option value="1-6-months">1 to 6 months</option>
+                    <option value="6-12-months">6 to 12 months</option>
+                    <option value="year-plus">Over 1 year</option>
+                </select>
+
+                <!-- Question 6 -->
+                <label>6. What do you find most frustrating about CSS?</label>
+                <input type="text" placeholder="e.g., Centering divs, responsiveness, specificity" class="input1">
+
+                <!-- Question 7 -->
+                <label>7. Do you use any CSS frameworks (like Tailwind or Bootstrap)?</label>
+                <select class="input1">
+                    <option value="" disabled selected>Select an answer</option>
+                    <option value="yes">Yes, frequently</option>
+                    <option value="sometimes">Sometimes / Learning them</option>
+                    <option value="no">No, I prefer vanilla CSS</option>
+                </select>
+
+                <!-- Question 8 -->
+                <label>8. How comfortable are you with making layouts responsive?</label>
+                <select class="input1">
+                    <option value="" disabled selected>Rate your confidence</option>
+                    <option value="5">Very Confident</option>
+                    <option value="3">Somewhat Confident</option>
+                    <option value="1">Not Confident at all</option>
+                </select>
+
+                <!-- Question 9 -->
+                <label>9. What resource has helped you learn the most?</label>
+                <input type="text" placeholder="e.g., YouTube, MDN Docs, online courses" class="input1">
+
+                <!-- Question 10 -->
+                <label>10. What topic would you like to learn next?</label>
+                <select class="input1">
+                    <option value="" disabled selected>Select next topic</option>
+                    <option value="javascript">JavaScript (Interactivity)</option>
+                    <option value="advanced-css">Advanced CSS Animations</option>
+                    <option value="git">Git & GitHub</option>
+                    <option value="frameworks">React / Vue / Angular</option>
+                </select>
                 
-                <button type="submit" class="btn1">Join Now</button>
+                <button type="submit" class="btn1">Submit Survey</button>
             </form>
         </section>
 

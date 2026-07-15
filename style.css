@@ -79,6 +79,7 @@ li {
     margin-bottom: 15px;
     border: 1px solid #cccccc;
     border-radius: 4px;
+    background-color: #ffffff; /* Ensures select dropdown matches background text input */
 }
 
 .btn1 {
