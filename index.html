@@ -3,182 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn the basics of HTML and CSS with our interactive survey">
-    <title>All About HTML and CSS</title>
+    <title>Learn HTML & CSS</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
+    
+    <!-- HEADER SECTION -->
     <header id="top-header">
-        <div class="header-content">
-            <h1>Learn Basic HTML & CSS</h1>
-            <p>A quick page covering the absolute basics of web development.</p>
-        </div>
+        <h1>Learn Basic HTML & CSS</h1>
+        <p>A quick page covering the basics of web development.</p>
     </header>
 
-    <!-- Main Content -->
+    <!-- MAIN CONTENT -->
     <main class="group1">
         
-        <!-- Section 1: HTML Basics -->
+        <!-- SECTION 1: WHAT IS HTML -->
         <section class="box1">
             <h2>What is HTML?</h2>
-            <p>HTML is the standard markup language for creating web pages. It provides the structure of a website.</p>
-            <h3>Key HTML Elements:</h3>
+            <p>HTML is the language we use to create web pages. It gives structure to websites.</p>
+            <h3>HTML Examples:</h3>
             <ul>
-                <li>Headings (using tags like h1, h2, h3)</li>
-                <li>Paragraphs (using the p tag)</li>
-                <li>Lists (like this unordered list using ul and li tags)</li>
-                <li>Images (using the img tag)</li>
+                <li><strong>&lt;h1&gt;</strong> - Big headings</li>
+                <li><strong>&lt;p&gt;</strong> - Paragraphs of text</li>
+                <li><strong>&lt;ul&gt;</strong> - Lists like this one</li>
+                <li><strong>&lt;img&gt;</strong> - Pictures on a page</li>
             </ul>
         </section>
 
-        <!-- Section 2: CSS Basics -->
+        <!-- SECTION 2: WHAT IS CSS -->
         <section class="box1">
             <h2>What is CSS?</h2>
-            <p>CSS is the language we use to style an HTML document. It describes how HTML elements should be displayed on the screen.</p>
-            <h3>Basic CSS Concepts:</h3>
+            <p>CSS makes websites look pretty! It adds colors, sizes, and styles.</p>
+            <h3>CSS Basics:</h3>
             <ul>
-                <li><strong>Class:</strong> Used to style multiple elements (written as .classname in CSS).</li>
-                <li><strong>ID:</strong> Used to style one unique element (written as #idname in CSS).</li>
-                <li><strong>Colors & Fonts:</strong> Simple properties to change how text looks.</li>
+                <li><strong>Colors</strong> - Make text and backgrounds colorful</li>
+                <li><strong>Fonts</strong> - Change how text looks</li>
+                <li><strong>Spacing</strong> - Add distance between things</li>
+                <li><strong>Boxes</strong> - Make shapes and containers</li>
             </ul>
         </section>
 
-        <!-- Section 3: Visual Representation -->
+        <!-- SECTION 3: VISUAL EXAMPLE -->
         <section class="box1">
-            <h2>Visual Representation</h2>
-            <p>Below is a simple illustration of how HTML (structure) and CSS (style) work together to build a website.</p>
+            <h2>How They Work Together</h2>
+            <p>HTML builds the page. CSS makes it look nice!</p>
             <img class="pic1" 
                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJsTYlADJXFZBgWOiJNxAN4H3nTsd6oWLIPHdSxv1x4Q&s=10" 
-                 alt="Web Development Concept showing how HTML and CSS work together">
+                 alt="HTML and CSS working together">
         </section>
 
-        <!-- Section 4: Survey Form -->
+        <!-- SECTION 4: SURVEY FORM -->
         <section class="box1" id="form-section">
-            <h2>HTML & CSS Survey</h2>
-            <p>Please take a few moments to answer these 10 questions about your web development experience.</p>
+            <h2>Quick Survey</h2>
+            <p>Tell us about your web development experience!</p>
             
-            <form id="survey-form" novalidate>
+            <form id="survey-form">
                 
-                <!-- Question 1: Skill Level -->
-                <div class="form-group">
-                    <label for="skill-level">1. What is your current skill level in HTML/CSS?</label>
-                    <select id="skill-level" class="input1" required>
-                        <option value="" disabled selected>Select your level</option>
-                        <option value="beginner">Beginner (Just starting)</option>
-                        <option value="intermediate">Intermediate (Built a few projects)</option>
-                        <option value="advanced">Advanced (Comfortable building layouts)</option>
-                    </select>
-                </div>
+                <!-- Question 1 -->
+                <label for="skill-level">1. What is your skill level?</label>
+                <select id="skill-level" class="input1" required>
+                    <option value="">-- Pick One --</option>
+                    <option value="Just Starting">Just Starting</option>
+                    <option value="Some Practice">Some Practice</option>
+                    <option value="Pretty Good">Pretty Good</option>
+                </select>
 
-                <!-- Question 2: Easier Technology -->
-                <div class="form-group">
-                    <label for="easier-tech">2. Which technology do you find easier to learn?</label>
-                    <select id="easier-tech" class="input1" required>
-                        <option value="" disabled selected>Select an option</option>
-                        <option value="html">HTML (Structure)</option>
-                        <option value="css">CSS (Styling)</option>
-                        <option value="both">Both are equally clear</option>
-                        <option value="neither">Both are challenging</option>
-                    </select>
-                </div>
+                <!-- Question 2 -->
+                <label for="easier-tech">2. Which is easier for you?</label>
+                <select id="easier-tech" class="input1" required>
+                    <option value="">-- Pick One --</option>
+                    <option value="HTML">HTML (the structure)</option>
+                    <option value="CSS">CSS (the styling)</option>
+                    <option value="Both are the same">Both are the same</option>
+                </select>
                 
-                <!-- Question 3: Main Goal -->
-                <div class="form-group">
-                    <label for="main-goal">3. What is your main goal for learning web development?</label>
-                    <input type="text" id="main-goal" placeholder="e.g., Build a portfolio, career change, hobby" class="input1" required>
-                    <span class="error-message" id="main-goal-error"></span>
-                </div>
+                <!-- Question 3 -->
+                <label for="main-goal">3. Why are you learning this?</label>
+                <input type="text" id="main-goal" placeholder="Example: To build websites" class="input1" required>
 
-                <!-- Question 4: Layout Tool -->
-                <div class="form-group">
-                    <label for="layout-tool">4. Which CSS layout tool do you prefer using?</label>
-                    <select id="layout-tool" class="input1" required>
-                        <option value="" disabled selected>Select a layout tool</option>
-                        <option value="flexbox">CSS Flexbox</option>
-                        <option value="grid">CSS Grid</option>
-                        <option value="floats">Floats / Positioning</option>
-                        <option value="none">I don't know yet</option>
-                    </select>
-                </div>
+                <!-- Question 4 -->
+                <label for="layout-tool">4. Favorite way to make layouts?</label>
+                <select id="layout-tool" class="input1" required>
+                    <option value="">-- Pick One --</option>
+                    <option value="Flexbox">Flexbox</option>
+                    <option value="CSS Grid">CSS Grid</option>
+                    <option value="Floats">Floats</option>
+                </select>
 
-                <!-- Question 5: Duration -->
-                <div class="form-group">
-                    <label for="duration">5. How long have you been practicing web development?</label>
-                    <select id="duration" class="input1" required>
-                        <option value="" disabled selected>Select a duration</option>
-                        <option value="less-month">Less than 1 month</option>
-                        <option value="1-6-months">1 to 6 months</option>
-                        <option value="6-12-months">6 to 12 months</option>
-                        <option value="year-plus">Over 1 year</option>
-                    </select>
-                </div>
+                <!-- Question 5 -->
+                <label for="duration">5. How long have you been learning?</label>
+                <select id="duration" class="input1" required>
+                    <option value="">-- Pick One --</option>
+                    <option value="Less than 1 month">Less than 1 month</option>
+                    <option value="1-3 months">1-3 months</option>
+                    <option value="More than 3 months">More than 3 months</option>
+                </select>
 
-                <!-- Question 6: CSS Frustration -->
-                <div class="form-group">
-                    <label for="frustration">6. What do you find most frustrating about CSS?</label>
-                    <input type="text" id="frustration" placeholder="e.g., Centering divs, responsiveness, specificity" class="input1" required>
-                    <span class="error-message" id="frustration-error"></span>
-                </div>
+                <!-- Question 6 -->
+                <label for="frustration">6. What's hard about CSS?</label>
+                <input type="text" id="frustration" placeholder="Example: Centering things" class="input1" required>
 
-                <!-- Question 7: CSS Frameworks -->
-                <div class="form-group">
-                    <label for="frameworks">7. Do you use any CSS frameworks (like Tailwind or Bootstrap)?</label>
-                    <select id="frameworks" class="input1" required>
-                        <option value="" disabled selected>Select an answer</option>
-                        <option value="yes">Yes, frequently</option>
-                        <option value="sometimes">Sometimes / Learning them</option>
-                        <option value="no">No, I prefer vanilla CSS</option>
-                    </select>
-                </div>
+                <!-- Question 7 -->
+                <label for="frameworks">7. Do you use CSS frameworks?</label>
+                <select id="frameworks" class="input1" required>
+                    <option value="">-- Pick One --</option>
+                    <option value="Yes">Yes</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="No">No</option>
+                </select>
 
-                <!-- Question 8: Responsive Design Confidence -->
-                <div class="form-group">
-                    <label for="confidence">8. How comfortable are you with making layouts responsive?</label>
-                    <select id="confidence" class="input1" required>
-                        <option value="" disabled selected>Rate your confidence</option>
-                        <option value="5">Very Confident</option>
-                        <option value="3">Somewhat Confident</option>
-                        <option value="1">Not Confident at all</option>
-                    </select>
-                </div>
+                <!-- Question 8 -->
+                <label for="confidence">8. How good are you at responsive design?</label>
+                <select id="confidence" class="input1" required>
+                    <option value="">-- Pick One --</option>
+                    <option value="Very Confident">Very Confident</option>
+                    <option value="Okay">Okay</option>
+                    <option value="Still Learning">Still Learning</option>
+                </select>
 
-                <!-- Question 9: Learning Resource -->
-                <div class="form-group">
-                    <label for="resource">9. What resource has helped you learn the most?</label>
-                    <input type="text" id="resource" placeholder="e.g., YouTube, MDN Docs, online courses" class="input1" required>
-                    <span class="error-message" id="resource-error"></span>
-                </div>
+                <!-- Question 9 -->
+                <label for="resource">9. What helped you learn most?</label>
+                <input type="text" id="resource" placeholder="Example: YouTube videos" class="input1" required>
 
-                <!-- Question 10: Next Topic -->
-                <div class="form-group">
-                    <label for="next-topic">10. What topic would you like to learn next?</label>
-                    <select id="next-topic" class="input1" required>
-                        <option value="" disabled selected>Select next topic</option>
-                        <option value="javascript">JavaScript (Interactivity)</option>
-                        <option value="advanced-css">Advanced CSS Animations</option>
-                        <option value="git">Git & GitHub</option>
-                        <option value="frameworks">React / Vue / Angular</option>
-                    </select>
-                </div>
+                <!-- Question 10 -->
+                <label for="next-topic">10. What do you want to learn next?</label>
+                <select id="next-topic" class="input1" required>
+                    <option value="">-- Pick One --</option>
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="Advanced CSS">Advanced CSS</option>
+                    <option value="Git">Git & GitHub</option>
+                </select>
                 
-                <!-- Submit Button -->
-                <button type="submit" class="btn1" aria-label="Submit the survey form">Submit Survey</button>
+                <!-- SUBMIT BUTTON -->
+                <button type="submit" class="btn1">Submit Survey</button>
             </form>
 
-            <!-- Success Message -->
-            <div id="survey-result" class="result-box" role="alert" aria-live="polite">
-                <h3>🎉 Survey Submitted Successfully!</h3>
+            <!-- SUCCESS MESSAGE -->
+            <div id="survey-result" class="result-box">
+                <h3>✅ Survey Complete!</h3>
                 <div id="result-summary"></div>
-                <button class="btn-secondary" id="btn-new-survey">Take Survey Again</button>
+                <button type="button" class="btn-new" id="btn-new-survey">Take Survey Again</button>
             </div>
         </section>
 
     </main>
 
-    <!-- Footer Section -->
+    <!-- FOOTER -->
     <footer>
-        <p>&copy; 2024 Created by Aaradhya Pratap Shah. All rights reserved.</p>
+        <p>Made by Aaradhya Pratap Shah © 2024</p>
     </footer>
 
     <!-- JavaScript -->
