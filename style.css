@@ -79,7 +79,7 @@ li {
     margin-bottom: 15px;
     border: 1px solid #cccccc;
     border-radius: 4px;
-    background-color: #ffffff; /* Ensures select dropdown matches background text input */
+    background-color: #ffffff;
 }
 
 .btn1 {
@@ -94,6 +94,33 @@ li {
 
 .btn1:hover {
     background-color: #d35400;
+}
+
+/* JavaScript Success Summary Container Styling */
+.result-box {
+    display: none; 
+    margin-top: 25px; 
+    padding: 20px; 
+    background-color: #e8f8f5; 
+    border: 1px solid #2ecc71; 
+    border-radius: 5px;
+}
+
+.result-box h3 {
+    color: #27ae60 !important;
+    margin-top: 0 !important;
+    margin-bottom: 15px;
+}
+
+.result-box p {
+    margin-bottom: 8px;
+    font-size: 15px;
+    border-bottom: 1px dashed #c2f0d5;
+    padding-bottom: 4px;
+}
+
+.result-box p:last-child {
+    border-bottom: none;
 }
 
 footer {
