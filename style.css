@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(to right, #07A3b2, #D9ECC6);
     background-attachment: fixed;
     color: #333;
     line-height: 1.6;
@@ -16,11 +16,11 @@ body {
 }
 
 #top-header {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(to right, #4C1857, #00A8AA);
     color: white;
     text-align: center;
     padding: 60px 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+   
 }
 
 #top-header h1 {
@@ -47,8 +47,7 @@ body {
     padding: 35px;
     margin-bottom: 30px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+
 }
 
 .box1:hover {
@@ -116,7 +115,7 @@ label {
     border-radius: 8px;
     background-color: #f9f9f9;
     font-size: 16px;
-    transition: all 0.3s;
+
     font-family: Arial, sans-serif;
 }
 
@@ -129,27 +128,27 @@ label {
     outline: none;
     border-color: #667eea;
     background-color: #fff;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    
 }
 
 
 .btn1 {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(#2321b6, #1a7cbe);
     color: white;
     padding: 14px 32px;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
+   
     font-size: 16px;
     font-weight: bold;
-    transition: all 0.3s;
-    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+    
+   
     width: 100%;
 }
 
 .btn1:hover {
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+    
 }
 
 .btn1:active {
@@ -169,7 +168,7 @@ footer {
     padding: 30px 20px;
     margin-top: 60px;
     font-size: 16px;
-    box-shadow: 0 -4px 20px rgba(102, 126, 234, 0.2);
+    
 }
 
 
