@@ -1,4 +1,4 @@
-// Survey form submission handler
+
 document.addEventListener('DOMContentLoaded', function() {
   const submitBtn = document.querySelector('button[type="submit"]');
   
