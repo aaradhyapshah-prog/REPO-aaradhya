@@ -52,7 +52,7 @@ body {
 
 .box1:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0);
+   
 }
 
 .box1 h2 {
@@ -88,7 +88,7 @@ li {
     height: auto;
     border-radius: 8px;
     margin-top: 20px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
 }
 
 
@@ -212,7 +212,7 @@ footer {
     }
 }
 
-/* VERY SMALL SCREENS (phones) */
+
 @media (max-width: 480px) {
     #top-header h1 {
         font-size: 28px;
