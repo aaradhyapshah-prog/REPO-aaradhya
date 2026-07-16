@@ -132,7 +132,7 @@ label {
     box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
 }
 
-/* SUBMIT BUTTON */
+
 .btn1 {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
@@ -156,55 +156,8 @@ label {
     transform: translateY(0);
 }
 
-/* "TAKE SURVEY AGAIN" BUTTON */
-.btn-new {
-    background: white;
-    color: #667eea;
-    border: 2px solid #667eea;
-    padding: 10px 20px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: bold;
-    transition: all 0.3s;
-    margin-top: 15px;
-}
 
-.btn-new:hover {
-    background: #667eea;
-    color: white;
-}
 
-/* RESULT BOX (Success message) */
-.result-box {
-    display: none;
-    margin-top: 25px;
-    padding: 30px;
-    background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
-    border: 2px solid #86efac;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(134, 239, 172, 0.2);
-    animation: slideIn 0.5s ease;
-}
-
-.result-box h3 {
-    color: #22c55e;
-    margin-top: 0;
-    margin-bottom: 20px;
-    font-size: 24px;
-}
-
-.result-box p {
-    margin-bottom: 12px;
-    font-size: 16px;
-    border-bottom: 1px solid #d1f8dd;
-    padding-bottom: 10px;
-    color: #166534;
-}
-
-.result-box p:last-child {
-    border-bottom: none;
-}
 
 
 
@@ -218,6 +171,26 @@ footer {
     font-size: 16px;
     box-shadow: 0 -4px 20px rgba(102, 126, 234, 0.2);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 768px) {
