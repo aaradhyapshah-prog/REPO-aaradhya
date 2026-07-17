@@ -171,6 +171,11 @@ footer {
 
 }
 
+footer p {
+    color:black;
+    opacity: 0.9;   
+}
+
 
 
 
