@@ -1,1 +1,263 @@
-<h1>hello</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #07A3b2, #D9ECC6);
+            background-attachment: fixed;
+            color: #333;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .thank-you-header {
+            background: linear-gradient(to right, #4C1857, #00A8AA);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .thank-you-header h1 {
+            font-size: 56px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .thank-you-header p {
+            font-size: 20px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .emoji {
+            font-size: 60px;
+            display: block;
+            margin-bottom: 20px;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .content-container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 0 20px;
+            flex-grow: 1;
+        }
+
+        .info-box {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .info-box h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        .info-box h3 {
+            color: #764ba2;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .info-box p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .info-box ul {
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+
+        .info-box li {
+            margin-bottom: 12px;
+            color: #555;
+            font-size: 16px;
+        }
+
+        .highlight {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .highlight-secondary {
+            color: #764ba2;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 16px;
+        }
+
+        footer p {
+            margin: 10px 0;
+        }
+
+        .heart {
+            color: #ff6b9d;
+            animation: heartbeat 1.5s infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .thank-you-header h1 {
+                font-size: 40px;
+            }
+
+            .thank-you-header p {
+                font-size: 18px;
+            }
+
+            .thank-you-header {
+                padding: 60px 15px;
+            }
+
+            .info-box {
+                padding: 25px;
+            }
+
+            .info-box h2 {
+                font-size: 26px;
+            }
+
+            .emoji {
+                font-size: 50px;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thank-you-header h1 {
+                font-size: 32px;
+            }
+
+            .thank-you-header p {
+                font-size: 16px;
+            }
+
+            .thank-you-header {
+                padding: 50px 15px;
+            }
+
+            .content-container {
+                margin: 30px auto;
+            }
+
+            .info-box {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .info-box h2 {
+                font-size: 22px;
+            }
+
+            .info-box h3 {
+                font-size: 18px;
+            }
+
+            .emoji {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="thank-you-header">
+        <span class="emoji">🙌</span>
+        <h1>Thanks for Taking Part in Our Survey!</h1>
+        <p>Your feedback means the world to us</p>
+    </div>
+
+    <div class="content-container">
+        <div class="info-box">
+            <h2>What Happens Next?</h2>
+            <p>We're thrilled that you took the time to share your thoughts with us. Your responses help us understand your needs better and create experiences that truly matter to you.</p>
+            <p>Here's what we'll do with your valuable feedback:</p>
+            <ul>
+                <li>We'll carefully review all survey responses</li>
+                <li>Your insights will guide our future improvements</li>
+                <li>We'll analyze trends to better serve our community</li>
+                <li>Any suggestions will be considered in our planning</li>
+            </ul>
+        </div>
+
+        <div class="info-box">
+            <h2>More Information</h2>
+            <h3>Why Your Opinion Matters</h3>
+            <p>Every response contributes to making our product better. Your unique perspective helps us understand what's working and what we can improve. We're committed to building something that resonates with people like you.</p>
+            
+            <h3>Stay Connected</h3>
+            <p>Want to stay updated? We'll keep you in the loop about changes and improvements based on surveys like this one. Your voice matters, and we want you to see the impact of your feedback.</p>
+            
+            <h3>Have More to Say?</h3>
+            <p>If you have additional thoughts or suggestions that didn't fit in the survey, feel free to reach out. We're always open to hearing from our community. Your extra insights could be the spark for our next big idea.</p>
+        </div>
+
+        <div class="info-box">
+            <h2>Quick Facts</h2>
+            <p>Did you know?</p>
+            <ul>
+                <li><span class="highlight">Your feedback directly influences</span> our product roadmap</li>
+                <li><span class="highlight">We read and analyze</span> every single response</li>
+                <li><span class="highlight">Community-driven improvements</span> are our priority</li>
+                <li><span class="highlight">Your time is valuable</span>, and we genuinely appreciate it</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>Thank you once again for being part of our journey</p>
+        <p><span class="heart">♥</span> We value your support <span class="heart">♥</span></p>
+        <p>© 2024 Our Community. All thoughts welcome here.</p>
+    </footer>
+</body>
+</html>
