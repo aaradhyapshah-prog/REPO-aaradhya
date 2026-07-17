@@ -49,8 +49,7 @@
             animation: bounce 2s infinite;
         }
 
-        
-
+       
         .content-container {
             max-width: 900px;
             margin: 50px auto;
@@ -113,10 +112,30 @@
             font-weight: bold;
         }
 
+        footer {
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px 20px;
+            margin-top: 60px;
+            font-size: 16px;
+        }
 
+        footer p {
+            margin: 10px 0;
+        }
 
- 
+       
+       
 
+        @keyframes heartbeat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
 
         @media (max-width: 768px) {
             .thank-you-header h1 {
@@ -185,7 +204,7 @@
     <div class="thank-you-header">
         <span class="emoji">🙌</span>
         <h1>Thanks for Taking Part in Our Survey!</h1>
-        <p>Your feedback mis very important to us</p>
+        <p>Your feedback means the world to us</p>
     </div>
 
     <div class="content-container">
@@ -225,5 +244,6 @@
         </div>
     </div>
 
-
+    
+</body>
 </html>
