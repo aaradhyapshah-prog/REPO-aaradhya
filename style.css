@@ -51,7 +51,7 @@ body {
 }
 
 .box1:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
    
 }
 
